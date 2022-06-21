@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .begin {
+            border: 2px solid cornsilk;
+            font-size: xx-large;
+            background-color:black;
+            color:cornsilk;
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <h2>Character Creator</h2><br>
+    
+    <div id="character-creator">
+        <form action="">
+            <label for="name">Character Name:</label>
+            <input type="text" name="fname"/><br>
+            <label for="gender">Gender:</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br/>
+            
+            <h3>Backstory</h3>
+            
+            <h4>Occupation</h4>
+            <input type="radio" name="occupation" id="construction-worker">
+            <label for="construction-worker"> Construction Worker</label>
+            <input type="radio" name="occupation" id="banker">
+            <label for="banker">Banker</label>
+            <input type="radio" name="occupation" id="nurse">
+            <label for="nurse0">Nurse</label>
+
+            <h4>Temperament</h4>
+            <input type="radio" name="temperament" id="hot-head">
+            <label for="hot-head">Hot Head</label>
+            <input type="radio" name="temperament" id="pragmatic">
+            <label for="pragmatic">Pragmatic</label>
+            <input type="radio" name="temperament" id="coward">
+            <label for="coward">Coward</label>
+
+            <h4>Build</h4>
+            <input type="radio" name="build" id="big">
+            <label for="big">Big & Strong</label>
+            <input type="radio" name="build" id="small">
+            <label for="small">Small & Nimble</label>
+            <input type="radio" name="build" id="potato">
+            <label for="potato">Coach Potato</label>
+        </form>
+    </div>
+    
+    <div id="scenario">
+        <p>Whether deserved or not, you find yourself in a jail cell at the top of a tower. <br>
+        <i>Can you escape?</i></p>
+    </div>
+
+    <a href="beginning.html"><input type="button" class="begin" value="Begin"></a>
+</body>
+</html>

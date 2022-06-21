@@ -1,0 +1,26 @@
+body {
+    background-color:silver;
+    font-family:arial;
+}
+
+h1 {
+    color: crimson;
+    margin-left: 50px;
+    text-underline-position: under;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+#secondheader {
+    text-transform: capitalize;
+    text-indent: 25%;
+    color: blue;
+}
+
+.text {
+    font-size: x-large;
+    text-align: right;
+}
