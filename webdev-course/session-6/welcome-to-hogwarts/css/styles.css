@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Banner */
+
+.banner-image {
+    background-image: url(../img/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.banner-text {
+    font-size: 100px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+/* Navbar */
+
+nav {
+    overflow: auto;
+    width: 100%;
+}
+
+nav a{
+    color: white;
+    float: left;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 25px;
+    width: 17%;   
+}
+
+/* Main headers */
+
+.header {
+    font-size: xx-large;
+    margin-bottom:25px;
+}
+
+/* Main article */
+
+.main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    columns: 2;
+    column-gap: 5%;
+}
+
+.column-1 {
+    float:left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.column-2{
+    float: right;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#chosen {
+    margin-top: 5%;
+}
+
+#willow {
+    margin-top: 20%;
+}
+
+.column-image {
+    width: 50vh;
+}
+
+/* Testimonials */
+
+.quotes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
