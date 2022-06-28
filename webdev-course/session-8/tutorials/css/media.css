@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.box img{
+    width: 35%;
+    height: 50%;
+    border: 2px solid white;
+}
+
+#box1{
+    display:none;
+}
+
+#box2{
+    display:none;
+}
+
+#box3{
+    display:none;
+}
+
+#box4{
+    display:none;
+}
+
+@media(min-width:1000px)
+{
+    #box1{
+        display:block;
+    }
+}
+
