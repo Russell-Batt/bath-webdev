@@ -1,24 +1,28 @@
-.background{
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(35, 45, 96);
     background-image: url(../img/background.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    padding: 5vh;
-    display: flex;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
-.container-nav{
-    justify-content: center;
+.nav-link{
+    font-size: larger;
 }
 
-.fcontainer-sidebar{
-    display: flex;
-    height: 25vh;
-    width: 2vw;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-left: -2vw;
-    margin-top: 27vh;
-    position: absolute; 
+p{
+    font-size: large;
 }
 
+.btn{
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(147, 166, 248), rgb(239, 126, 214));
+}
+
+.container a img{
+    height: 60px;
+    width: 60px;
+}
