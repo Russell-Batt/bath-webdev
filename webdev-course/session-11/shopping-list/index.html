@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    .pageContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+</style>
+<body>
+    
+    <div class="pageContainer">
+        <h1>Shopping List</h1>
+        <br>
+        <input type="text" name="userItem" id="textBox">
+        <br>
+        <button id="favs">Load favorites</button>
+        <input type="submit" value="Submit" id="submitBtn">
+        <div>
+        <ul id="output"></ul>
+        </div>
+    </div>
+
+</body>
+</html>

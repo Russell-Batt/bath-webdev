@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="pageContainer">
+    
+        <div class="container">
+            
+            <!-- Output screen & clear button -->
+
+            <div class="display">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" id="output" class="screen" disabled>
+                    </div>
+                    <div class="col-2">
+                        <button class="clear" onClick="clearOutput()">C</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Number pad -->
+
+            <div class="numpad">
+                <div class="row row-cols-4">
+                    
+                    <!-- Row 1 -->
+
+                    <div class="col-3">
+                        <button value="7" class="button" onClick="display('7')">7</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="8" class="button" onClick="display('8')">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="9" class="button" onClick="display('9')">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="/" class="options" onClick="display('/')">/</button>
+                    </div>
+
+                    <!-- Row 2 -->
+
+                    <div class="col-3">
+                        <button value="4" class="button" onClick="display('4')">4</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="5" class="button" onClick="display('5')">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="6" class="button" onClick="display('6')">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="*" class="options" onClick="display('*')">*</button>
+                    </div>
+
+                    <!-- Row 3 -->
+
+                    <div class="col-3">
+                        <button value="1" class="button" onClick="display('1')">1</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="2" class="button" onClick="display('2')">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="3" class="button" onClick="display('3')">3</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="-" class="options" onClick="display('-')">-</button>
+                    </div>
+
+                    <!-- Row 4 -->
+
+                    <div class="col-3">
+                        <button value="0" class="button" onClick="display('0')">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="." class="button" onClick="display('.')">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="=" class="equals" onClick="calculate()">=</button>
+                    </div>
+                    <div class="col-3">
+                        <button value="+" class="options" onClick="display('+')">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
