@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="groceries-container">
+
+    </div>
+
+    <script>
+        
+        let groceries = [
+            {name: 'Apples', price: '£1.50', quantity: 6, inStock: true},
+            {name: 'Eggs', price: '£2.00', quantity: 12, inStock: false},
+            {name: 'Milk', price: '£1.00', quantity: 1, inStock: true}
+        ]
+        
+        const groceriesDiv = document.querySelector('.groceries-container')
+        groceries.map( (item, i) => {
+            const p = document.createElement('p');
+            p.innerHTML = [item.name, item.price];
+            groceriesDiv.appendChild(p);
+        })
+
+        let fruits = [
+            'Orange',
+            'Apple',
+            'Pear'
+        ]
+
+        console.log(fruits);
+
+        let numbers = [
+            565,
+            564651,
+            21618
+        ]
+
+        console.log(numbers);
+
+
+        console.log(groceries[0].price);
+
+    </script>
+
+</body>
+</html>

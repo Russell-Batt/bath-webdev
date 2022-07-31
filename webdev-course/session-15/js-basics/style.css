@@ -1,0 +1,14 @@
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#box.test{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    background-image: url('thumbsup.png');
+    background-size: contain;
+}
+
