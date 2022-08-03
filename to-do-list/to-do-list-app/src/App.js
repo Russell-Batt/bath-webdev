@@ -14,9 +14,9 @@ function App() {
   
   const [ todos, setTodos ] = useState(initialData);
 
-   const addTodoFn = (e) => {
+   const addTodoFn = (e, currentTask) => {
     e.preventDefault();
-     setTodos([...todos, 'Another item']);
+     setTodos([ ...todos, currentTask ]);
    }
 
   return (

@@ -1,15 +1,18 @@
-import addTodoFn from './App';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function ToDoList(props) {
-    const { todos } = props;
+    const { todos, addTodo } = props;
 
-    const [ task, setTask ] = useState('');
+    const [ task, setTask ] = useState(null);
+
+    useEffect(() => {
+        console.log(task);
+    }, [task])
 
     return (
         <div className="todoListMain">
             <div className="header">
-                <form onSubmit={ () => addTodoFn(task) }>
+                <form onSubmit={(e) => addTodo(e, task)}>
                     <input 
                     placeholder="Task" 
                     name="task" 
